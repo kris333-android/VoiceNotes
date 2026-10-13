@@ -1,0 +1,1 @@
+int string share_chooser_title 0x0

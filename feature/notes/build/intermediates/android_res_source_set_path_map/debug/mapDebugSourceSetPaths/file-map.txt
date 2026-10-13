@@ -1,0 +1,9 @@
+com.voicenotes.app.feature.notes-pngs-0 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/generated/res/pngs/debug
+com.voicenotes.app.feature.notes-updated_navigation_xml-1 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/generated/updated_navigation_xml/debug
+com.voicenotes.app.feature.notes-mergeDebugResources-2 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.voicenotes.app.feature.notes-mergeDebugResources-3 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.voicenotes.app.feature.notes-debug-4 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/intermediates/merged_res/debug/mergeDebugResources
+com.voicenotes.app.feature.notes-debug-5 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/intermediates/packaged_res/debug/packageDebugResources
+com.voicenotes.app.feature.notes-debug-6 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/src/debug/res
+com.voicenotes.app.feature.notes-main-7 /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/src/main/res
+gradleHome-0 /Users/gollu/.gradle

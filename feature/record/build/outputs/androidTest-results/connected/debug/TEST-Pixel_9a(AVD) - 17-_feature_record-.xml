@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="6" failures="0" errors="0" skipped="0" time="14.506" timestamp="2026-09-15T02:16:09" hostname="localhost">
+  <testsuite name="com.voicenotes.app.feature.record.RecordScreenTest" tests="6" failures="0" errors="0" skipped="0" time="9.685" timestamp="2026-09-15T02:16:09" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_9a(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":feature:record" />
+    </properties>
+    <testcase name="pausedPhaseShowsResumeAndInvokesOnResume" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="2.092" />
+    <testcase name="idlePhaseTappingMicInvokesOnStartWhenPermissionGranted" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="1.329" />
+    <testcase name="recordingPhaseShowsElapsedTimeAndControls" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="1.363" />
+    <testcase name="tappingPauseInvokesOnPause" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="1.349" />
+    <testcase name="tappingStopInvokesOnFinish" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="1.289" />
+    <testcase name="tappingDiscardShowsConfirmationThenInvokesOnDiscardAndOnClose" classname="com.voicenotes.app.feature.record.RecordScreenTest" time="2.263" />
+  </testsuite>
+</testsuites>

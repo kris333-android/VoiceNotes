@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-14T23:10:17.074Z" hostname="krishna.local" time="0.012">
+  <properties/>
+  <testcase name="createFolderAndMoveNote creates the folder and moves the note into it" classname="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" time="0.003"/>
+  <testcase name="renameNote updates the note title" classname="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" time="0.001"/>
+  <testcase name="moveNote back to null unfiles the note" classname="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" time="0.002"/>
+  <testcase name="deleteNote removes the note" classname="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" time="0.001"/>
+  <testcase name="moveNote moves an existing note to the target folder" classname="com.voicenotes.app.feature.notes.list.NotesListViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

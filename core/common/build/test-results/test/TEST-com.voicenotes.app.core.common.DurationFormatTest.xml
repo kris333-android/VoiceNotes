@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.voicenotes.app.core.common.DurationFormatTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-14T19:24:53.019Z" hostname="krishna.local" time="0.012">
+  <properties/>
+  <testcase name="formats hours when present" classname="com.voicenotes.app.core.common.DurationFormatTest" time="0.001"/>
+  <testcase name="accessibility label handles zero duration" classname="com.voicenotes.app.core.common.DurationFormatTest" time="0.01"/>
+  <testcase name="formats minutes and seconds" classname="com.voicenotes.app.core.common.DurationFormatTest" time="0.0"/>
+  <testcase name="accessibility label pluralizes correctly" classname="com.voicenotes.app.core.common.DurationFormatTest" time="0.0"/>
+  <testcase name="formats seconds under a minute as m colon ss" classname="com.voicenotes.app.core.common.DurationFormatTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

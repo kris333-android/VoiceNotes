@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.voicenotes.app.feature.record.RecordViewModelTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-14T23:10:18.327Z" hostname="krishna.local" time="0.692">
+  <properties/>
+  <testcase name="discardRecording cancels the controller and resets state" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.652"/>
+  <testcase name="finishAndSave does nothing when the controller has no active recording" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.004"/>
+  <testcase name="finishAndSave saves a note with the recorded file and duration" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.013"/>
+  <testcase name="finishAndSave assigns the note to the folder it was recorded in" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.003"/>
+  <testcase name="finishAndSave leaves the note unfiled when no folder id was passed" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.002"/>
+  <testcase name="paused state freezes the reported elapsed time" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.004"/>
+  <testcase name="recording state updates elapsed time and amplitude history" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.003"/>
+  <testcase name="resumeRecording delegates to the controller" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.003"/>
+  <testcase name="pauseRecording delegates to the controller" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.002"/>
+  <testcase name="startRecording creates a file and starts the controller" classname="com.voicenotes.app.feature.record.RecordViewModelTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

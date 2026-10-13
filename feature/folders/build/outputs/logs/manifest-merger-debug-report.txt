@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml:2:13-83
+INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml:2:13-83
+	package
+		INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml
+	xmlns:android
+		ADDED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml:2:23-81
+uses-sdk
+INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml reason: use-sdk injection requested
+INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml
+INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml
+	android:targetSdkVersion
+		INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml
+	android:minSdkVersion
+		INJECTED from /Users/gollu/AndroidStudioProjects/VoiceNotes/feature/folders/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest11478067614552508911.xml
