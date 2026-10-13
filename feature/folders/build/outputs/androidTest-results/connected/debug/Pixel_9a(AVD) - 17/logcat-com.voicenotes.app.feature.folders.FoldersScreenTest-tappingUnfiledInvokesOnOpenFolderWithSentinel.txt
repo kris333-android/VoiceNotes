@@ -1,0 +1,775 @@
+09-14 20:52:53.135 14992 15006 I TestRunner: started: tappingUnfiledInvokesOnOpenFolderWithSentinel(com.voicenotes.app.feature.folders.FoldersScreenTest)
+09-14 20:52:53.139 14992 15006 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@a834f2b]
+09-14 20:52:53.142 14992 15006 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-14 20:52:53.145   663  1548 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@82fe0bd8 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-14 20:52:53.147  1226  1226 D RecentsView: onTaskDisplayChanged: 105, new displayId = 0
+09-14 20:52:53.151   495   757 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007813ee033d70) with descriptor: '(not cached)'
+09-14 20:52:53.154   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.154   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.154   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.154   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.154   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.170   554 14807 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+09-14 20:52:53.172   663  1046 I Surface : Creating surface for consumer unnamed-663-375 with slotExpansion=1 for 64 slots
+09-14 20:52:53.172   663  1046 I Surface : Creating surface for consumer ImageReader-864x1939f1m1-663-375 with slotExpansion=1 for 64 slots
+09-14 20:52:53.172   663  1046 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-14 20:52:53.176   663  2166 W InputChannel-JNI: Channel already disposed.
+09-14 20:52:53.177 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: PRE_ON_CREATE
+09-14 20:52:53.178 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-14 20:52:53.178   663  1046 E ConsumerBase: [ImageReader-864x1939f1m1-663-375] abandonLocked: ConsumerBase is abandoned!
+09-14 20:52:53.178  1078  1282 I Surface : Creating surface for consumer unnamed-1078-107 with slotExpansion=1 for 64 slots
+09-14 20:52:53.179  1078  1282 I Surface : Creating surface for consumer VRI[test]#107(BLAST Consumer)107 with slotExpansion=1 for 64 slots
+09-14 20:52:53.179  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 20:52:53.179  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 20:52:53.182 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: CREATED
+09-14 20:52:53.182 14992 14992 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@31a591b
+09-14 20:52:53.182 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: STARTED
+09-14 20:52:53.182 14992 14992 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@31a591b
+09-14 20:52:53.183 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: RESUMED
+09-14 20:52:53.183 14992 14992 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@31a591b
+09-14 20:52:53.186   663  2098 W InputChannel-JNI: Channel already disposed.
+09-14 20:52:53.187   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.187   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.187   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.187   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.187   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.190 14992 14992 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@bf01eda
+09-14 20:52:53.194 14992 14992 D VRI[ComponentActivity]: WindowInsets changed: 1080x2424 statusBars:[0,142,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,174,0,84]
+09-14 20:52:53.198 14992 15022 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@bf01eda
+09-14 20:52:53.205   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.205   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.205   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.205   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.205   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.221   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.221   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.221   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.221   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.221   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.246   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.248  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 20:52:53.258 14992 14992 I Surface : Creating surface for consumer unnamed-14992-6 with slotExpansion=1 for 64 slots
+09-14 20:52:53.259 14992 14992 I Surface : Creating surface for consumer VRI[ComponentActivity]#6(BLAST Consumer)6 with slotExpansion=1 for 64 slots
+09-14 20:52:53.260   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.264   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.275   455   582 I RanchuHwc: logCompositionFallbackIfChanged: layer 757 CompositionType fallback from 3 to 1
+09-14 20:52:53.276   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.276   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.276   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.276   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.276   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.292  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 20:52:53.298  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 20:52:53.300   663   688 I ActivityTaskManager: Displayed com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity for user 0: +155ms
+09-14 20:52:53.302  1226  1299 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=18 windowingMode=1 user=0 lastActiveTime=8229358 lastFocusedTime=8228708] null, [id=105 windowingMode=1 user=0 lastActiveTime=8229377 lastFocusedTime=8229452] null]
+09-14 20:52:53.302   663  1548 I Surface : Creating surface for consumer unnamed-663-376 with slotExpansion=1 for 64 slots
+09-14 20:52:53.302   663  1548 I Surface : Creating surface for consumer ImageReader-864x1939f1m1-663-376 with slotExpansion=1 for 64 slots
+09-14 20:52:53.302   663  1548 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-14 20:52:53.303   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.304   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.305   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.305   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.305   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.305   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.305   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.308   663  1548 E ConsumerBase: [ImageReader-864x1939f1m1-663-376] abandonLocked: ConsumerBase is abandoned!
+09-14 20:52:53.320   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.321   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.337   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.338   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.366   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.374   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.386   663   897 W InputChannel-JNI: Channel already disposed.
+09-14 20:52:53.387   520   520 I adbd    : adbd service requested 'shell,v2,raw:dumpsys package com.google.android.gms'
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.388   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.389   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.390  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2269
+09-14 20:52:53.391  1514  1514 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 0, locked = false
+09-14 20:52:53.398  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1454 onStartInput(EditorInfo{EditorInfo{packageName=com.voicenotes.app.feature.folders.test, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-14 20:52:53.398  1514  1514 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():321 Update input view padding, isNavbarOverInputWindow=true, bottom inset=63
+09-14 20:52:53.413  1514  1514 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 1, locked = false
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.425   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.453   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.454   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.491   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.494   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.495   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.504   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.504   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.523   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.524   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.535   663   677 W System  : A resource failed to call HardwareBuffer.close.
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.548   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.551   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.574   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.587   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.587   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.587   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.588   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.588   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.588   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.612   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.614   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.628   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.630   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.644   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.645   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.645   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.645   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.645   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.646   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.646   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.656   554 14807 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.676   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.678   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.679   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.679   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.679   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.679   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.679   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.700  2170  2170 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+09-14 20:52:53.700  2170  2170 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/oat/arm64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+09-14 20:52:53.706  2170  2170 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_AdsDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.708   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.710  2170  2170 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+09-14 20:52:53.711  2170  2170 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/oat/arm64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.726   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.728  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_DynamiteLoader_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.740   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.741  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_DynamiteModulesA_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.742   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.743  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_DynamiteModulesC_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.755   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.755   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.755   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.756   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.756   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.756   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.756   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.757   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.757   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_GoogleCertificates_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.758   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.773   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.774  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_MapsDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.775   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.790  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_MeasurementDynamite_installtime.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.792  2170  2175 I artd    : GetBestInfo: dm (/data/app/~~8vgXKsIqxZkL65lIRv5zPA==/com.google.android.gms-pYO4y8MglNLofvuKumb6Cg==/split_all_locale_splits.dm) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.792  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+09-14 20:52:53.792  2170  2175 I artd    : GetBestInfo: /data/user/0/com.google.android.gms/app_dg_cache/F43216EC192C66BFB5A30C3CDD57E8C5C9005730/the.apk has no usable artifacts
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.792   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.793   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.794  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.809   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.812  2170  2175 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/AEB5BC832EBF3852F39BA4BE495DD40566104436/oat/arm64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+09-14 20:52:53.824  2170  2170 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000013/dl-MlkitBarcodeUi.optional_263234100400.apk has no usable artifacts
+09-14 20:52:53.828  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+09-14 20:52:53.830  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000015/dl-TfliteDynamiteDynamite.integ_260580502100400.apk has no usable artifacts
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.838  1203  1203 I HidDeviceService: unregisterAppUid(): uid=10231
+09-14 20:52:53.838  1203  1203 W HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+09-14 20:52:53.838  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitBarcodeUi.optional_262236100400.apk has no usable artifacts
+09-14 20:52:53.840  2170  2170 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_262236100400.apk has no usable artifacts
+09-14 20:52:53.846  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/dl-PlayCloudSearch.optional_263234100000.apk has no usable artifacts
+09-14 20:52:53.848  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_262236100000.apk has no usable artifacts
+09-14 20:52:53.850  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_262236100400.apk has no usable artifacts
+09-14 20:52:53.853  2170  2170 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000c/dl-VisionOcr.optional_262236100000.apk has no usable artifacts
+09-14 20:52:53.855  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_252130102100400.apk has no usable artifacts
+09-14 20:52:53.856  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000014/dl-MlkitOcrCommon.optional_263234100400.apk has no usable artifacts
+09-14 20:52:53.858  2170  2170 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-IdentityCredentialsPlatform.optional_262236100400.apk has no usable artifacts
+09-14 20:52:53.860  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000012/dl-Appsearch.optional_263234100400.apk has no usable artifacts
+09-14 20:52:53.861  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000018/dl-VisionOcr.optional_263234100000.apk has no usable artifacts
+09-14 20:52:53.861  2170  2170 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000007/MeasurementDynamite.apk has no usable artifacts
+09-14 20:52:53.863  2170  2175 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000017/dl-IdentityCredentialsPlatform.optional_263234100400.apk has no usable artifacts
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.870   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.890   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.891   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.904   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.921   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.921   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.921   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.921   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.921   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.939   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.939   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.939   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.939   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.939   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.944   663  1046 I Surface : Creating surface for consumer unnamed-663-377 with slotExpansion=1 for 64 slots
+09-14 20:52:53.944   663  1046 I Surface : Creating surface for consumer ImageReader-864x1939f1m1-663-377 with slotExpansion=1 for 64 slots
+09-14 20:52:53.944   663  1046 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-14 20:52:53.964   663  1046 E ConsumerBase: [ImageReader-864x1939f1m1-663-377] abandonLocked: ConsumerBase is abandoned!
+09-14 20:52:53.970   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:53.984   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.004   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.020   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.324   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.394   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.450   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.471   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 20:52:54.476  2122  2122 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-14 20:52:54.510  1483  1483 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.aang.events.services.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-14 20:52:54.514   663   688 D SystemClockTime: Setting time of day to sec=1789434044
+09-14 21:00:44.054   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.054   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.080   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.089   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.100   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.101 10462 10462 D BootBroadcastReceiver: refresh job and clear data from action=android.intent.action.TIME_SET
+09-14 21:00:44.102 10462 15039 D DatabaseUtils: clear data after current time = 1789434044102
+09-14 21:00:44.119 10462 15039 D BatteryUsageContentProvider: getLastFullChargeTimestampMs() in 0/ms
+09-14 21:00:44.120 10462 15039 D DatabaseUtils: getLastFullChargeTime() lastFullChargeTime=Sep 14, 2026, 15:43:44 in 2/ms
+09-14 21:00:44.120 10462 15039 D DatabaseUtils: getBatteryEvents for timestamp: 1789415024990
+09-14 21:00:44.120 10462 15039 D BatteryUsageContentProvider: getQueryBatteryEventTypes from uri: content://com.android.settings.battery.usage.provider/BatteryEvent?timestamp=1789415024990&batteryEventType=3%2C4
+09-14 21:00:44.120 10462 15039 D BatteryUsageContentProvider: getQueryTimestampMs from uri: content://com.android.settings.battery.usage.provider/BatteryEvent?timestamp=1789415024990&batteryEventType=3%2C4
+09-14 21:00:44.120 10462 15039 W BatteryUsageContentProvider: getBatteryEvents() in 0/ms
+09-14 21:00:44.121 10462 15039 D DatabaseUtils: getBatteryEvents size=4 in 1/ms
+09-14 21:00:44.124  1226  1305 D ModelInitializer: onAppIconChanged: com.google.android.calendar
+09-14 21:00:44.130 10462 10478 D PeriodicJobManager: schedule next alarm job at Sep 14, 2026, 22:00:00
+09-14 21:00:44.132 10462 10462 D PeriodicJobReceiver: refresh periodic job from action=com.android.settings.battery.action.PERIODIC_JOB_UPDATE
+09-14 21:00:44.133  3358  3358 I AlarmClock: AlarmInitReceiver android.intent.action.TIME_SET
+09-14 21:00:44.133  1418  1418 D PermissionStorageTimeChangeReceiver: Time changed by 469 seconds
+09-14 21:00:44.134   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.143  1418  1418 D PermissionStorageTimeChangeReceiver: systemTimeSnapshot set to 1789434044133
+09-14 21:00:44.143  1418  1418 D PermissionStorageTimeChangeReceiver: realtimeSnapshot set to 8230810
+09-14 21:00:44.149  3358  3517 I AlarmClock: Connected Dock: null
+09-14 21:00:44.150  1078  1086 W System  : A resource failed to call release.
+09-14 21:00:44.152 10462 15059 D BatteryUsageDataLoader: loadUsageDataSafely() in the AsyncTask
+09-14 21:00:44.153  1078  1086 W System  : A resource failed to call release.
+09-14 21:00:44.153  1078  1086 W System  : A resource failed to call release.
+09-14 21:00:44.153  1078  1086 W System  : A resource failed to call release.
+09-14 21:00:44.161  2122 14734 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=android.intent.action.TIME_SET flg=0x25200010 xflg=0x4 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver }.
+09-14 21:00:44.168   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.190   663  2092 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=8230862 mSleepTimeMs=1428 mIdleTimeMs=476 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[34, 102, 204, 272, 306],mRxTimeMs=306}]}
+09-14 21:00:44.196   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.217   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.232 10462 10466 W ndroid.settings: Suspending all threads took: 45.642ms
+09-14 21:00:44.234  2122 15042 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1789444800000]
+09-14 21:00:44.236   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.267 10462 10466 W ndroid.settings: Suspending all threads took: 30.870ms
+09-14 21:00:44.268 10462 10483 D PeriodicJobManager: schedule next alarm job at Sep 14, 2026, 22:00:00
+09-14 21:00:44.277  2588  2723 W UsageSyncManager: <DWB> Last (TimeDelta{wallTime=2026-09-15T00:52:49.833Z, elapsedSinceBoot=PT2H17M6.04S}, boot count 2) and current (TimeDelta{wallTime=2026-09-15T01:00:44.277Z, elapsedSinceBoot=PT2H17M10.954S}, boot count 2) deltas are different. Increase event shift by PT7M49.53S.
+09-14 21:00:44.279  2588  2723 W UsageSyncManager: <DWB> Deferring shifting events by PT3H52M5.001S
+09-14 21:00:44.286   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.312  2122 15042 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 6.
+09-14 21:00:44.318   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.321   491  9061 I AF::TrackHandle: opChanged OP_PLAY_AUDIO callback received for
+09-14 21:00:44.325  2122 15043 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] xflg=0x4 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+09-14 21:00:44.326  2122 15043 I SystemUpdate: [Execution,ExecutionManager] Start action execution: finished-execution
+09-14 21:00:44.332  2122 15043 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.01 seconds.
+09-14 21:00:44.357   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.379  1078  1078 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.screen.ui.GrayscaleTileService}(0)
+09-14 21:00:44.385   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.407  1226  1305 D AlphabeticIndexCompat: computeSectionName: cs: Calendar sectionName: C
+09-14 21:00:44.407  1226  1226 D AllAppsStore: setApps: apps.length=22
+09-14 21:00:44.407  1226  1226 D AllAppsStore: notifyUpdate: notifying listeners
+09-14 21:00:44.407  1226  1226 D ActivityAllAppsContainerView: onAppsUpdated; number of apps: 22
+09-14 21:00:44.407  1226  1226 D ActivityAllAppsContainerView: rebindAdapters: force: false
+09-14 21:00:44.410   313   536 W android.system.suspend-service: BPF wakelock stats failed, falling back to sysfs: Success
+09-14 21:00:44.422  1226  1226 D ActivityAllAppsContainerView: rebindAdapters: Not needed.
+09-14 21:00:44.422  1226  1226 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: Clearing FastScrollerSections.
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: Adding apps with sections. HasPrivateApps: false
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: C with appInfoTitle: Calendar
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: D with appInfoTitle: Drive
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: F with appInfoTitle: Files
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: G with appInfoTitle: Gmail
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: M with appInfoTitle: Maps
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: N with appInfoTitle: Nav3Recipes
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: P with appInfoTitle: Phone
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: S with appInfoTitle: Safety
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: T with appInfoTitle: TMoble
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: V with appInfoTitle: Voice Notes
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: Y with appInfoTitle: YouTube
+09-14 21:00:44.422  1226  1226 D AlphabeticalAppsList: Adding FastScrollSection duplicate to scroll to the bottom.
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: Clearing FastScrollerSections.
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: Adding apps with sections. HasPrivateApps: false
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: C with appInfoTitle: Calendar
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: D with appInfoTitle: Drive
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: F with appInfoTitle: Files
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: G with appInfoTitle: Gmail
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: M with appInfoTitle: Maps
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: N with appInfoTitle: Nav3Recipes
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: P with appInfoTitle: Phone
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: S with appInfoTitle: Safety
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: T with appInfoTitle: TMoble
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: V with appInfoTitle: Voice Notes
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: addAppsWithSections: adding sectionName: Y with appInfoTitle: YouTube
+09-14 21:00:44.423  1226  1226 D AlphabeticalAppsList: Adding FastScrollSection duplicate to scroll to the bottom.
+09-14 21:00:44.440   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.440  1226  1298 D AllAppsStore: setApps: apps.length=22
+09-14 21:00:44.440  1226  1298 D AllAppsStore: notifyUpdate: notifying listeners
+09-14 21:00:44.445  2588  2724 W JobInfo : Requested important-while-foreground flag for job444 is ignored and takes no effect
+09-14 21:00:44.468  1226  1226 D b/387844520: getOutlineOffsetX: measured width = 173, mNormalizedIconSize = 159, last updated width = 173
+09-14 21:00:44.469  1226  1226 D ConnectorProvider: Connector disabled by gantry flag.
+09-14 21:00:44.473   663  1548 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=8231148 mSleepTimeMs=1470 mIdleTimeMs=490 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[35, 105, 210, 280, 315],mRxTimeMs=315}]}
+09-14 21:00:44.474   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.494   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.501   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.509   663  2166 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@82fe0bd8 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-14 21:00:44.532   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.533   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.533   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.533   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.533   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.533   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.551   495   757 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for binder (0xb4007813ee03e530) with descriptor: '(not cached)'
+09-14 21:00:44.552 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: PAUSED
+09-14 21:00:44.552 14992 14992 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@31a591b
+09-14 21:00:44.556 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9 in: PRE_ON_CREATE
+09-14 21:00:44.556 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9
+09-14 21:00:44.557 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9 in: CREATED
+09-14 21:00:44.557 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9
+09-14 21:00:44.557 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9 in: STARTED
+09-14 21:00:44.557 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9
+09-14 21:00:44.558 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9 in: RESUMED
+09-14 21:00:44.558 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.572   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.590 10462 15059 D DataProcessor: getBatteryUsageStats() from BatteryStatsManager in 438/ms, maxStatsAgeMs=0
+09-14 21:00:44.590 10462 15059 W DataProcessor: shouldShowBatteryAttributionList(): 0.1
+09-14 21:00:44.590 10462 15059 W BatteryUsageDataLoader: getBatteryEntryList() returns null or empty content
+09-14 21:00:44.590 10462 15059 D BatteryUsageDataLoader: getBatteryUsageStats() in 438/ms
+09-14 21:00:44.591 10462 15059 D DatabaseUtils: insert() data into database with isFullChargeStart:false
+09-14 21:00:44.593 10462 15059 D DatabaseUtils: sendBatteryEntryData() size=1 in 3/ms
+09-14 21:00:44.593  1663  2585 W AiAiEcho: LyftNotificationParser Ridesharing ETA not enabled
+09-14 21:00:44.593  1663  2585 I AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+09-14 21:00:44.593 10462 15059 D BatteryUsageContentProvider: getQueryUserId from uri: content://com.android.settings.battery.usage.provider/appUsageLatestTimestamp?userid=0
+09-14 21:00:44.593 10462 15059 D BatteryUsageContentProvider: getAppUsageLatestTimestampMs() for user 0 in 0/ms
+09-14 21:00:44.594 10462 15059 D DatabaseUtils: getAppUsageStartTimestampOfUser() userId=0 latestTimestamp=Sep 14, 2026, 20:00:46 in 1/ms
+09-14 21:00:44.595 10462 15059 D DataProcessor: getAppUsageEventsForUser(): 0 from 1789430446446 to 1789434044593 in 1/ms
+09-14 21:00:44.595 10462 15059 D DataProcessor: getAppUsageEvents() for all unlocked users in 2/ms
+09-14 21:00:44.601   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.602   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.602   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.602   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.602   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.602   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.618   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.623 10462 15059 D DataProcessor: Read 187 relevant events (187 total) from UsageStatsManager for user 0
+09-14 21:00:44.623 10462 15059 W DataProcessor: Read 187 relevant events (187 total) from UsageStatsManager for all users
+09-14 21:00:44.623 10462 15059 D DataProcessor: getCurrentAppOnTopEvents() from ActivityManager in 0/ms
+09-14 21:00:44.623 10462 15059 D DataProcessor: Read 1 current on top events from ActivityManager running app processes
+09-14 21:00:44.623 10462 15059 D BatteryUsageDataLoader: loadAppUsageData() size=188 in 30/ms
+09-14 21:00:44.636   663   941 E WifiDataStall: Ignore this poll. newStats: null txLinkSpeedMbps: 1 rxLinkSpeedMbps: 2 rssi: -50 connectionCapabilities: com.android.server.wifi.WifiNative$ConnectionCapabilities@476612d
+09-14 21:00:44.642   663  2087 W InputChannel-JNI: Channel already disposed.
+09-14 21:00:44.650   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.650   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.651   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.651   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.651   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.651   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.675  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 21:00:44.675  1226  1299 D PreloadThumbnailUseCase: Preloading thumbnails for task ids: [[id=18 windowingMode=1 user=0 lastActiveTime=8229358 lastFocusedTime=8228708] null, [id=105 windowingMode=1 user=0 lastActiveTime=8231230 lastFocusedTime=8229452] null]
+09-14 21:00:44.679 14992 14992 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@bbaf550
+09-14 21:00:44.679 14992 14992 D VRI[InstrumentationActivityInvoker$EmptyActivity]: WindowInsets changed: 1080x2424 statusBars:[0,142,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,174,0,84]
+09-14 21:00:44.680 14992 15022 D WindowOnBackDispatcher: setOnBackInvokedCallbackInfo: android.app.Activity$$ExternalSyntheticLambda0@bbaf550
+09-14 21:00:44.681  1203  1203 I HidDeviceService: unregisterAppUid(): uid=10160
+09-14 21:00:44.681  1203  1203 W HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+09-14 21:00:44.684   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.684   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.684   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.684   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.684   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.695  1078  1078 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}(0)
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.717   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.727 14992 14992 I Surface : Creating surface for consumer unnamed-14992-7 with slotExpansion=1 for 64 slots
+09-14 21:00:44.729 14992 14992 I Surface : Creating surface for consumer VRI[InstrumentationActivityInvoker$EmptyActivity]#7(BLAST Consumer)7 with slotExpansion=1 for 64 slots
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.735   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.767   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.787   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.812   663   688 I ActivityTaskManager: Displayed com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +296ms
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.813   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.818   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.839   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.844   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.846 10462 15059 D DatabaseUtils: insert() app usage events data into database
+09-14 21:00:44.846 10462 15059 D DatabaseUtils: sendAppUsageEventData() size=188 in 223/ms
+09-14 21:00:44.846 10462 15059 D BatteryUsageContentProvider: getLastFullChargeTimestampMs() in 0/ms
+09-14 21:00:44.853 10462 15059 D DatabaseUtils: getLastFullChargeTime() lastFullChargeTime=Sep 14, 2026, 15:43:44 in 7/ms
+09-14 21:00:44.853 10462 15059 D DatabaseUtils: getBatteryEvents for timestamp: 1789415024990
+09-14 21:00:44.853 10462 15059 D BatteryUsageContentProvider: getQueryBatteryEventTypes from uri: content://com.android.settings.battery.usage.provider/BatteryEvent?timestamp=1789415024990&batteryEventType=3%2C4
+09-14 21:00:44.853 10462 15059 D BatteryUsageContentProvider: getQueryTimestampMs from uri: content://com.android.settings.battery.usage.provider/BatteryEvent?timestamp=1789415024990&batteryEventType=3%2C4
+09-14 21:00:44.853 10462 15059 W BatteryUsageContentProvider: getBatteryEvents() in 0/ms
+09-14 21:00:44.854 10462 15059 D DatabaseUtils: getBatteryEvents size=4 in 1/ms
+09-14 21:00:44.854 10462 15059 D DataProcessManager: getPeriodBatteryLevelData() startTimestamp=Sep 14, 2026, 20:00:00
+09-14 21:00:44.854 10462 15059 D DataProcessManager: execute getBatteryLevelData in 8/ms, batteryLevelRecordEvents.size=4
+09-14 21:00:44.854 10462 15059 D BatteryUsageDataLoader: preprocessBatteryUsageSlots() no new battery usage data.
+09-14 21:00:44.854 10462 15059 D BatteryUsageDataLoader: loadUsageDataSafely() in 702/ms
+09-14 21:00:44.867 14992 14992 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-14 21:00:44.877   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.877   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.877   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.877   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.877   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.890   663  1046 I Surface : Creating surface for consumer unnamed-663-378 with slotExpansion=1 for 64 slots
+09-14 21:00:44.891   663  1046 I Surface : Creating surface for consumer ImageReader-648x1454f1m1-663-378 with slotExpansion=1 for 64 slots
+09-14 21:00:44.891   663  1046 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+09-14 21:00:44.902   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.902   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.902   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.902   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.902   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.920 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: STOPPED
+09-14 21:00:44.920 14992 14992 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@31a591b
+09-14 21:00:44.925   663  1046 E ConsumerBase: [ImageReader-648x1454f1m1-663-378] abandonLocked: ConsumerBase is abandoned!
+09-14 21:00:44.934   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.946   495   542 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.950 14992 14992 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-14 21:00:44.951 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@31a591b in: DESTROYED
+09-14 21:00:44.951 14992 14992 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-14 21:00:44.952   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.954 14992 15015 D HWUI    : endAllActiveAnimators on 0xb4007415a0047f40 (UnprojectedRipple) with handle 0xb40074160006d700
+09-14 21:00:44.964 14992 14992 D ViewRootImpl: Skipping stats log for color mode
+09-14 21:00:44.978 14992 14992 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9 in: PAUSED
+09-14 21:00:44.978 14992 14992 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.voicenotes.app.feature.folders.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.voicenotes.app.feature.folders.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@ac4f1d9
+09-14 21:00:44.982  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2269
+09-14 21:00:44.982   663   897 W InputChannel-JNI: Channel already disposed.
+09-14 21:00:44.983  1514  1514 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 0, locked = false
+09-14 21:00:44.983 14992 15006 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@a834f2b]
+09-14 21:00:44.983  1514  1514 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1454 onStartInput(EditorInfo{EditorInfo{packageName=com.voicenotes.app.feature.folders.test, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-14 21:00:44.983  1514  1514 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():321 Update input view padding, isNavbarOverInputWindow=true, bottom inset=63
+09-14 21:00:44.983  1514  1514 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 1, locked = false
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.984   495   495 W skia    : AGTM parsing failed flags.readFromStream(s) at 159
+09-14 21:00:44.996  1226  1226 D RecentTasksList: invalidateLoadedTasks - previous requestLoadId: -1
+09-14 21:00:44.997 14992 15006 I TestRunner: finished: tappingUnfiledInvokesOnOpenFolderWithSentinel(com.voicenotes.app.feature.folders.FoldersScreenTest)

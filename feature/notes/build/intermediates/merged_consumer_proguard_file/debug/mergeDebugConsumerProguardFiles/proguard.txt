@@ -1,0 +1,4 @@
+-keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.notes.detail.NoteDetailViewModel
+-keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.notes.detail.NoteDetailViewModel
+-keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.notes.list.NotesListViewModel
+-keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.notes.list.NotesListViewModel

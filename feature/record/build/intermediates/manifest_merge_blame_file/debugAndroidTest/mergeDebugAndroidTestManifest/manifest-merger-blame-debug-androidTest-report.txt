@@ -1,0 +1,219 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.voicenotes.app.feature.record.test" >
+4
+5    <uses-sdk
+5-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:5:5-7:41
+6        android:minSdkVersion="26"
+6-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:6:9-35
+7        android:targetSdkVersion="37" />
+7-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:7:9-38
+8    <!--
+9         Declared here (not in src/main) so only the instrumented test APK requests this
+10         permission, letting RecordScreenTest use GrantPermissionRule to pre-grant it.
+11    -->
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:12:5-71
+12-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:12:22-68
+13
+14    <instrumentation
+14-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:14:5-19:74
+15        android:name="androidx.test.runner.AndroidJUnitRunner"
+15-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:15:9-63
+16        android:functionalTest="false"
+16-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:16:9-39
+17        android:handleProfiling="false"
+17-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:17:9-40
+18        android:label="Tests for com.voicenotes.app.feature.record.test"
+18-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:18:9-73
+19        android:targetPackage="com.voicenotes.app.feature.record.test" />
+19-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:19:9-71
+20
+21    <uses-permission android:name="android.permission.REORDER_TASKS" />
+21-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:24:5-72
+21-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:24:22-69
+22
+23    <permission
+23-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.voicenotes.app.feature.record.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.voicenotes.app.feature.record.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
+28
+29    <queries>
+29-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:24:5-28:15
+30        <package android:name="androidx.test.orchestrator" />
+30-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:25:9-62
+30-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:25:18-59
+31        <package android:name="androidx.test.services" />
+31-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:26:9-58
+31-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:26:18-55
+32        <package android:name="com.google.android.apps.common.testing.services" />
+32-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:27:9-83
+32-->[androidx.test:runner:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/9efd3fe5e9613066baa6554606aa2652/transformed/runner-1.7.0/AndroidManifest.xml:27:18-80
+33    </queries>
+34
+35    <application
+35-->/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/record/build/intermediates/tmp/manifest/androidTest/debug/tempFile2ProcessTestManifest6847979778997956260.xml:21:5-20
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.19.0] /Users/gollu/.gradle/caches/9.5.0/transforms/864b18f2b4394634186a5a906579808e/transformed/core-1.19.0/AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false" >
+38-->INJECTED
+39        <activity
+39-->[androidx.compose.ui:ui-tooling-android:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/6558fb8db834ffc73eb6046d513d5a3c/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+40            android:name="androidx.compose.ui.tooling.PreviewActivity"
+40-->[androidx.compose.ui:ui-tooling-android:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/6558fb8db834ffc73eb6046d513d5a3c/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+41            android:exported="true" />
+41-->[androidx.compose.ui:ui-tooling-android:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/6558fb8db834ffc73eb6046d513d5a3c/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+42        <activity
+42-->[androidx.compose.ui:ui-test-manifest:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/2133cca884968a4dbeffb2de16f8ae76/transformed/ui-test-manifest-1.11.0/AndroidManifest.xml:23:9-26:79
+43            android:name="androidx.activity.ComponentActivity"
+43-->[androidx.compose.ui:ui-test-manifest:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/2133cca884968a4dbeffb2de16f8ae76/transformed/ui-test-manifest-1.11.0/AndroidManifest.xml:24:13-63
+44            android:exported="true"
+44-->[androidx.compose.ui:ui-test-manifest:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/2133cca884968a4dbeffb2de16f8ae76/transformed/ui-test-manifest-1.11.0/AndroidManifest.xml:25:13-36
+45            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+45-->[androidx.compose.ui:ui-test-manifest:1.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/2133cca884968a4dbeffb2de16f8ae76/transformed/ui-test-manifest-1.11.0/AndroidManifest.xml:26:13-76
+46        <activity
+46-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:27:9-34:20
+47            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+47-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:28:13-99
+48            android:exported="true"
+48-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:29:13-36
+49            android:theme="@style/WhiteBackgroundTheme" >
+49-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:30:13-56
+50            <intent-filter android:priority="-100" >
+50-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:13-33:29
+50-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:28-51
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:17-77
+51-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:35:9-42:20
+55            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+55-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:36:13-95
+56            android:exported="true"
+56-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:37:13-36
+57            android:theme="@style/WhiteBackgroundTheme" >
+57-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:38:13-56
+58            <intent-filter android:priority="-100" >
+58-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:13-33:29
+58-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:28-51
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:17-77
+59-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:43:9-50:20
+63            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+63-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:44:13-103
+64            android:exported="true"
+64-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:45:13-36
+65            android:theme="@style/WhiteBackgroundDialogTheme" >
+65-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:46:13-62
+66            <intent-filter android:priority="-100" >
+66-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:13-33:29
+66-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:31:28-51
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:17-77
+67-->[androidx.test:core:1.7.0] /Users/gollu/.gradle/caches/9.5.0/transforms/1867912b9cc5b40289bbd8b07770ad1a/transformed/core-1.7.0/AndroidManifest.xml:32:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <provider
+71-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+72            android:name="androidx.startup.InitializationProvider"
+72-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+73            android:authorities="com.voicenotes.app.feature.record.test.androidx-startup"
+73-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+74            android:exported="false" >
+74-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+75            <meta-data
+75-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+76-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+77                android:value="androidx.startup" />
+77-->[androidx.emoji2:emoji2:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/daf597d3779b8ae33e70d543ca773d12/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+78            <meta-data
+78-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/86fccab8eefde8eb8029127c32eebe57/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/86fccab8eefde8eb8029127c32eebe57/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:30:17-78
+80                android:value="androidx.startup" />
+80-->[androidx.lifecycle:lifecycle-process:2.11.0] /Users/gollu/.gradle/caches/9.5.0/transforms/86fccab8eefde8eb8029127c32eebe57/transformed/lifecycle-process-2.11.0/AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+83                android:value="androidx.startup" />
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+84        </provider>
+85
+86        <uses-library
+86-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+89        <uses-library
+89-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.5.0] /Users/gollu/.gradle/caches/9.5.0/transforms/cc5b228863fcc2cca61e120437504b3c/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+92
+93        <receiver
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+94            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+95            android:directBootAware="false"
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+96            android:enabled="true"
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+97            android:exported="true"
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+98            android:permission="android.permission.DUMP" >
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+100                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+103                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+104            </intent-filter>
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+106                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+109                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/gollu/.gradle/caches/9.5.0/transforms/b71959a389e4869816fdfd09e35c3afc/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+110            </intent-filter>
+111        </receiver>
+112
+113        <service
+113-->[androidx.room:room-runtime-android:2.8.2] /Users/gollu/.gradle/caches/9.5.0/transforms/ca1d4ede17948f142fc695ac34e94cb2/transformed/room-runtime/AndroidManifest.xml:24:9-28:63
+114            android:name="androidx.room.MultiInstanceInvalidationService"
+114-->[androidx.room:room-runtime-android:2.8.2] /Users/gollu/.gradle/caches/9.5.0/transforms/ca1d4ede17948f142fc695ac34e94cb2/transformed/room-runtime/AndroidManifest.xml:25:13-74
+115            android:directBootAware="true"
+115-->[androidx.room:room-runtime-android:2.8.2] /Users/gollu/.gradle/caches/9.5.0/transforms/ca1d4ede17948f142fc695ac34e94cb2/transformed/room-runtime/AndroidManifest.xml:26:13-43
+116            android:exported="false" />
+116-->[androidx.room:room-runtime-android:2.8.2] /Users/gollu/.gradle/caches/9.5.0/transforms/ca1d4ede17948f142fc695ac34e94cb2/transformed/room-runtime/AndroidManifest.xml:27:13-37
+117    </application>
+118
+119</manifest>

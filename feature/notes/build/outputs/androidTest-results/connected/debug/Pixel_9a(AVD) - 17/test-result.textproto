@@ -1,0 +1,693 @@
+# proto-message: google.testing.platform.proto.api.core.TestSuiteResult
+# 2026-09-15T02:15:50.509961Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 12
+  device {
+    id: "emulator-5554"
+    friendly_name: "primary"
+  }
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "NoteDetailScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.detail"
+    test_method: "showsNoteTitle"
+    start_time {
+      seconds: 1789437311
+      nanos: 813000000
+    }
+    end_time {
+      seconds: 1789438312
+      nanos: 664000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.detail.NoteDetailScreenTest-showsNoteTitle.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NoteDetailScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.detail"
+    test_method: "tappingPlayInvokesOnTogglePlayback"
+    start_time {
+      seconds: 1789438312
+      nanos: 721000000
+    }
+    end_time {
+      seconds: 1789438314
+      nanos: 673000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.detail.NoteDetailScreenTest-tappingPlayInvokesOnTogglePlayback.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NoteDetailScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.detail"
+    test_method: "overflowDeleteConfirmInvokesOnDelete"
+    start_time {
+      seconds: 1789438315
+      nanos: 321000000
+    }
+    end_time {
+      seconds: 1789438520
+      nanos: 256000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.detail.NoteDetailScreenTest-overflowDeleteConfirmInvokesOnDelete.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NoteDetailScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.detail"
+    test_method: "overflowRenameConfirmInvokesOnRename"
+    start_time {
+      seconds: 1789438520
+      nanos: 933000000
+    }
+    end_time {
+      seconds: 1789438524
+      nanos: 940000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.detail.NoteDetailScreenTest-overflowRenameConfirmInvokesOnRename.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NoteDetailScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.detail"
+    test_method: "overflowShareInvokesOnShareDirectly"
+    start_time {
+      seconds: 1789438525
+      nanos: 662000000
+    }
+    end_time {
+      seconds: 1789438527
+      nanos: 459000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.detail.NoteDetailScreenTest-overflowShareInvokesOnShareDirectly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "overflowDeleteConfirmInvokesOnDelete"
+    start_time {
+      seconds: 1789438528
+      nanos: 189000000
+    }
+    end_time {
+      seconds: 1789438532
+      nanos: 171000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-overflowDeleteConfirmInvokesOnDelete.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "tappingNoteInvokesOnOpenNote"
+    start_time {
+      seconds: 1789438532
+      nanos: 814000000
+    }
+    end_time {
+      seconds: 1789438534
+      nanos: 191000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-tappingNoteInvokesOnOpenNote.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "tappingRecordFabInvokesOnRecord"
+    start_time {
+      seconds: 1789438534
+      nanos: 880000000
+    }
+    end_time {
+      seconds: 1789438536
+      nanos: 498000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-tappingRecordFabInvokesOnRecord.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "overflowRenameConfirmInvokesOnRename"
+    start_time {
+      seconds: 1789438537
+      nanos: 267000000
+    }
+    end_time {
+      seconds: 1789438541
+      nanos: 336000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-overflowRenameConfirmInvokesOnRename.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "showsEmptyStateWhenNoNotes"
+    start_time {
+      seconds: 1789438542
+      nanos: 151000000
+    }
+    end_time {
+      seconds: 1789438544
+      nanos: 50000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-showsEmptyStateWhenNoNotes.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "showsNoteWhenPresent"
+    start_time {
+      seconds: 1789438544
+      nanos: 625000000
+    }
+    end_time {
+      seconds: 1789438546
+      nanos: 521000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-showsNoteWhenPresent.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NotesListScreenTest"
+    test_package: "com.voicenotes.app.feature.notes.list"
+    test_method: "overflowShareInvokesOnShareDirectly"
+    start_time {
+      seconds: 1789438546
+      nanos: 522000000
+    }
+    end_time {
+      seconds: 1789438549
+      nanos: 289000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/logcat-com.voicenotes.app.feature.notes.list.NotesListScreenTest-overflowShareInvokesOnShareDirectly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/gollu/AndroidStudioProjects/VoiceNotes/feature/notes/build/outputs/androidTest-results/connected/debug/Pixel_9a(AVD) - 17/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

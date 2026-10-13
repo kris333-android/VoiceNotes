@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="10" failures="0" errors="0" skipped="0" time="3436.035" timestamp="2026-09-15T01:33:00" hostname="localhost">
+  <testsuite name="com.voicenotes.app.feature.folders.FoldersScreenTest" tests="10" failures="0" errors="0" skipped="0" time="2453.574" timestamp="2026-09-15T01:33:00" hostname="localhost">
+    <properties>
+      <property name="device" value="Pixel_9a(AVD) - 17" />
+      <property name="flavor" value="" />
+      <property name="project" value=":feature:folders" />
+    </properties>
+    <testcase name="selectingDarkThemeInvokesOnThemeModeChange" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="2.492" />
+    <testcase name="creatingFolderViaToolbarInvokesOnCreateFolder" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1024.6" />
+    <testcase name="tappingUnfiledInvokesOnOpenFolderWithSentinel" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="471.974" />
+    <testcase name="tappingRecordFabInvokesOnRecord" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1.461" />
+    <testcase name="longPressFolderThenDeleteThenConfirmInvokesOnDeleteFolder" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="2.71" />
+    <testcase name="unfiledRowShownWhenCountIsPositive" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1.815" />
+    <testcase name="unfiledRowHiddenWhenCountIsZero" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="944.474" />
+    <testcase name="tappingAllNotesInvokesOnOpenFolderWithSentinel" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1.391" />
+    <testcase name="showsAllNotesRowWithCount" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1.145" />
+    <testcase name="showsFolderRows" classname="com.voicenotes.app.feature.folders.FoldersScreenTest" time="1.512" />
+  </testsuite>
+</testsuites>

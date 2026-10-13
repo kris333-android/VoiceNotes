@@ -1,0 +1,2 @@
+com.voicenotes.app.core.data
+string share_chooser_title

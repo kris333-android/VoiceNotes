@@ -1,0 +1,1 @@
+-keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.record.RecordViewModel

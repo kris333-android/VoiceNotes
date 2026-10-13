@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window background only, shown briefly before Compose draws; in-app theming
+         (light/dark/dynamic color) is fully controlled by VoiceNotesTheme in Compose. -->
+    <style name="Theme.VoiceNotes" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>

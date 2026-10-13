@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.voicenotes.app.feature.folders.FoldersViewModelTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-14T23:10:14.161Z" hostname="krishna.local" time="1.019">
+  <properties/>
+  <testcase name="deleteFolder removes the folder" classname="com.voicenotes.app.feature.folders.FoldersViewModelTest" time="0.933"/>
+  <testcase name="setThemeMode delegates to UserPreferencesRepository" classname="com.voicenotes.app.feature.folders.FoldersViewModelTest" time="0.034"/>
+  <testcase name="renameFolder updates the folder name" classname="com.voicenotes.app.feature.folders.FoldersViewModelTest" time="0.011"/>
+  <testcase name="createFolder does not clobber existing folders" classname="com.voicenotes.app.feature.folders.FoldersViewModelTest" time="0.008"/>
+  <testcase name="createFolder adds a folder with the given name" classname="com.voicenotes.app.feature.folders.FoldersViewModelTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

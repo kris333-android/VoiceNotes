@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.3.2" type="incidents">
+
+    <incident
+        id="EmptySuperCall"
+        severity="warning"
+        message="No need to call `super.onCleared`; the super method is defined to be empty">
+        <location
+            file="${:feature:record*debug*MAIN*sourceProvider*0*javaDir*2}/com/voicenotes/app/feature/record/RecordViewModel.kt"
+            line="104"
+            column="15"
+            startOffset="3814"
+            endLine="104"
+            endColumn="24"
+            endOffset="3823"/>
+    </incident>
+
+</incidents>
