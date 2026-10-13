@@ -1,2 +1,2 @@
 # VoiceNotes
-Android voice memo app for recording, organizing, and managing notes with folders, and local storage, built in Kotlin using Jetpack Compose and a modular clean-architecture design.
+Voice Notes is a modern Android application for recording, organizing, and managing voice memos. Built with Kotlin and Jetpack Compose, it lets users create voice notes, group them into folders, browse note details, and save recordings locally with metadata. The project follows a modular, clean-architecture setup with separate layers for app, feature, data, database, and design system concerns
