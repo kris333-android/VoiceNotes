@@ -9,8 +9,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.material.icons.filled.AllInbox
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.material.icons.filled.CreateNewFolder
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
@@ -22,7 +23,6 @@ import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
@@ -95,19 +95,29 @@ fun FoldersScreen(
                 title = { Text("Voice Notes") },
                 actions = {
                     IconButton(onClick = { showCreateFolder = true }) {
-                        Icon(Icons.Filled.CreateNewFolder, contentDescription = "New folder")
+                        Icon(
+                            Icons.Filled.CreateNewFolder,
+                            tint = MaterialTheme.colorScheme.primary,
+                            contentDescription = "New folder"
+                        )
                     }
                     IconButton(onClick = { showThemeMenu = true }) {
-                        Icon(Icons.Filled.Palette, contentDescription = "Change app theme")
+                        Icon(
+                            Icons.Filled.Palette,
+                            tint = MaterialTheme.colorScheme.primary,
+                            contentDescription = "Change app theme"
+                        )
                     }
-                    DropdownMenu(expanded = showThemeMenu, onDismissRequest = { showThemeMenu = false }) {
+                    DropdownMenu(
+                        expanded = showThemeMenu,
+                        onDismissRequest = { showThemeMenu = false }) {
                         ThemeMode.entries.forEach { mode ->
                             DropdownMenuItem(
                                 text = { Text(mode.label()) },
                                 onClick = { onThemeModeChange(mode); showThemeMenu = false },
                                 trailingIcon = {
                                     if (mode == uiState.themeMode) {
-                                        Icon(Icons.Filled.ChevronRight, contentDescription = "Selected")
+                                        Icon(Icons.Filled.Check, contentDescription = "Selected")
                                     }
                                 },
                             )
@@ -207,13 +217,21 @@ private fun FolderRow(
         headlineContent = { Text(item.folder.name) },
         supportingContent = { Text(countLabel) },
         leadingContent = {
-            Icon(Icons.Filled.Folder, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+            Icon(
+                Icons.Filled.Folder,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary
+            )
         },
         trailingContent = {
             Icon(Icons.Filled.ChevronRight, contentDescription = null)
         },
         modifier = Modifier
-            .combinedClickable(onClick = onClick, onLongClick = onLongClick, onClickLabel = a11yLabel)
+            .combinedClickable(
+                onClick = onClick,
+                onLongClick = onLongClick,
+                onClickLabel = a11yLabel
+            )
             .semantics { contentDescription = a11yLabel },
     )
 }

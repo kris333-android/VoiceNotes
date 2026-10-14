@@ -11,6 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.voicenotes.app.core.designsystem.theme.VoiceNotesTheme
 import com.voicenotes.app.core.model.ThemeMode
@@ -23,12 +24,14 @@ class MainActivity : ComponentActivity() {
     private val mainViewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
+        splashScreen.setKeepOnScreenCondition { mainViewModel.themeMode.value == null }
         enableEdgeToEdge()
         setContent {
             val themeMode by mainViewModel.themeMode.collectAsStateWithLifecycle()
             val darkTheme = when (themeMode) {
-                ThemeMode.SYSTEM -> isSystemInDarkTheme()
+                null, ThemeMode.SYSTEM -> isSystemInDarkTheme()
                 ThemeMode.LIGHT -> false
                 ThemeMode.DARK -> true
             }

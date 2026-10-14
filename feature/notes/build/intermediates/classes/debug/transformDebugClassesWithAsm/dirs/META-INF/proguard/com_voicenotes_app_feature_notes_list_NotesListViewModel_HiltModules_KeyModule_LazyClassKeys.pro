@@ -1,1 +1,0 @@
--keep,allowobfuscation,allowshrinking class com.voicenotes.app.feature.notes.list.NotesListViewModel

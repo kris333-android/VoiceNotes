@@ -1,9 +1,0 @@
-com.voicenotes.app.core.database-pngs-0 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/generated/res/pngs/debug
-com.voicenotes.app.core.database-updated_navigation_xml-1 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/generated/updated_navigation_xml/debug
-com.voicenotes.app.core.database-mergeDebugResources-2 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.voicenotes.app.core.database-mergeDebugResources-3 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.voicenotes.app.core.database-debug-4 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/intermediates/merged_res/debug/mergeDebugResources
-com.voicenotes.app.core.database-debug-5 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/build/intermediates/packaged_res/debug/packageDebugResources
-com.voicenotes.app.core.database-debug-6 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/src/debug/res
-com.voicenotes.app.core.database-main-7 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/database/src/main/res
-gradleHome-0 /Users/gollu/.gradle

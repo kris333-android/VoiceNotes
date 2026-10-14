@@ -42,24 +42,16 @@ class AudioRecorderController @Inject constructor(
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
     private var pollingJob: Job? = null
-    private var recorder: MediaRecorder? = null
+    private var mediaRecorder: MediaRecorder? = null
     private var outputFile: File? = null
     private var accumulatedMillis: Long = 0L
     private var segmentStartUptime: Long? = null
 
     fun start(outputFile: File) {
+        println("AudioRecorderController.start() outputFile=${outputFile.absolutePath}")
         releaseRecorder()
-        val mr = createRecorder().apply {
-            setAudioSource(MediaRecorder.AudioSource.MIC)
-            setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
-            setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
-            setAudioEncodingBitRate(128_000)
-            setAudioSamplingRate(44_100)
-            setOutputFile(outputFile.absolutePath)
-            prepare()
-            start()
-        }
-        recorder = mr
+        val recorder = createRecorderAndConfigure(outputFile)
+        mediaRecorder = recorder
         this.outputFile = outputFile
         accumulatedMillis = 0L
         segmentStartUptime = SystemClock.elapsedRealtime()
@@ -67,9 +59,9 @@ class AudioRecorderController @Inject constructor(
     }
 
     fun pause() {
-        val mr = recorder ?: return
+        val recorder = mediaRecorder ?: return
         if (_state.value !is State.Recording) return
-        mr.pause()
+        recorder.pause()
         pollingJob?.cancel()
         accumulatedMillis = currentElapsedMillis()
         segmentStartUptime = null
@@ -77,26 +69,30 @@ class AudioRecorderController @Inject constructor(
     }
 
     fun resume() {
-        val mr = recorder ?: return
+        val recorder = mediaRecorder ?: return
         if (_state.value !is State.Paused) return
-        mr.resume()
+        recorder.resume()
         segmentStartUptime = SystemClock.elapsedRealtime()
         startPolling()
     }
 
     fun stop(): RecordingResult? {
-        val mr = recorder
+        val recorder = mediaRecorder
         val file = outputFile
         val duration = currentElapsedMillis()
         pollingJob?.cancel()
-        if (mr != null) {
-            runCatching { mr.stop() }
-            mr.release()
+        recorder?.let {
+            runCatching { recorder.stop() }
+            recorder.release()
         }
-        recorder = null
-        outputFile = null
+        cleanup()
         _state.value = State.Idle
         return file?.let { RecordingResult(it, duration) }
+    }
+
+    private fun cleanup() {
+        mediaRecorder = null
+        outputFile = null
     }
 
     fun cancel() {
@@ -118,7 +114,7 @@ class AudioRecorderController @Inject constructor(
         pollingJob?.cancel()
         pollingJob = scope.launch {
             while (isActive) {
-                val amplitude = runCatching { recorder?.maxAmplitude ?: 0 }.getOrDefault(0)
+                val amplitude = runCatching { mediaRecorder?.maxAmplitude ?: 0 }.getOrDefault(0)
                 _state.value = State.Recording(currentElapsedMillis(), amplitude)
                 delay(POLL_INTERVAL_MS)
             }
@@ -126,16 +122,25 @@ class AudioRecorderController @Inject constructor(
     }
 
     private fun releaseRecorder() {
-        recorder?.let { runCatching { it.release() } }
-        recorder = null
+        mediaRecorder?.let { runCatching { it.release() } }
+        mediaRecorder = null
     }
 
-    private fun createRecorder(): MediaRecorder =
+    private fun createRecorderAndConfigure(output: File): MediaRecorder =
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             MediaRecorder(context)
         } else {
             @Suppress("DEPRECATION")
             MediaRecorder()
+        }.apply {
+            setAudioSource(MediaRecorder.AudioSource.MIC)
+            setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
+            setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
+            setAudioEncodingBitRate(128_000)
+            setAudioSamplingRate(44_100)
+            setOutputFile(output.absolutePath)
+            prepare()
+            start()
         }
 
     private companion object {
