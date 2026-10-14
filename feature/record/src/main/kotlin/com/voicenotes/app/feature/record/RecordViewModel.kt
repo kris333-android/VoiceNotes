@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.voicenotes.app.core.data.audio.AudioRecorderController
 import com.voicenotes.app.core.data.audio.NoteFileStorage
 import com.voicenotes.app.core.data.repository.NoteRepository
+import com.voicenotes.app.core.utils.DateFormattingUtils
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -13,8 +14,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.io.File
-import java.time.format.DateTimeFormatter
-import java.time.LocalDateTime
 import javax.inject.Inject
 
 data class RecordUiState(
@@ -30,15 +29,18 @@ data class RecordUiState(
 private const val MAX_AMPLITUDE_HISTORY = 80
 private const val MAX_RECORDER_AMPLITUDE = 32_767f
 
+private const val FOLDER_ID_KEY = "folderId"
+
 @HiltViewModel
 class RecordViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val recorderController: AudioRecorderController,
     private val noteRepository: NoteRepository,
     private val fileStorage: NoteFileStorage,
+    private val dateFormattingUtils: DateFormattingUtils,
 ) : ViewModel() {
 
-    private val folderId: Long? = savedStateHandle.get<Long>("folderId")?.takeIf { it >= 0L }
+    private val folderId: Long? = savedStateHandle.get<Long>(FOLDER_ID_KEY)?.takeIf { it >= 0L }
 
     private val _uiState = MutableStateFlow(RecordUiState())
     val uiState: StateFlow<RecordUiState> = _uiState.asStateFlow()
@@ -54,12 +56,19 @@ class RecordViewModel @Inject constructor(
                         it.copy(
                             phase = RecordUiState.Phase.RECORDING,
                             elapsedMillis = state.elapsedMillis,
-                            amplitudeHistory = (it.amplitudeHistory + (state.amplitude / MAX_RECORDER_AMPLITUDE).coerceIn(0f, 1f))
+                            amplitudeHistory = (it.amplitudeHistory + (state.amplitude / MAX_RECORDER_AMPLITUDE).coerceIn(
+                                0f,
+                                1f
+                            ))
                                 .takeLast(MAX_AMPLITUDE_HISTORY),
                         )
                     }
+
                     is AudioRecorderController.State.Paused -> _uiState.update {
-                        it.copy(phase = RecordUiState.Phase.PAUSED, elapsedMillis = state.elapsedMillis)
+                        it.copy(
+                            phase = RecordUiState.Phase.PAUSED,
+                            elapsedMillis = state.elapsedMillis
+                        )
                     }
                 }
             }
@@ -87,7 +96,8 @@ class RecordViewModel @Inject constructor(
         val result = recorderController.stop() ?: return
         _uiState.update { it.copy(isSaving = true) }
         viewModelScope.launch {
-            val title = "Voice note " + DateTimeFormatter.ofPattern("MMM d, h:mm a").format(LocalDateTime.now())
+            val title = "Voice note " + dateFormattingUtils.getFileNameForUi()
+            println("*** VIEW MODEL = FILE NAME = ${title}, PATH = ${result.file.absolutePath}")
             val noteId = noteRepository.addNote(
                 title = title,
                 filePath = result.file.absolutePath,
@@ -101,6 +111,5 @@ class RecordViewModel @Inject constructor(
 
     override fun onCleared() {
         recorderController.release()
-        super.onCleared()
     }
 }

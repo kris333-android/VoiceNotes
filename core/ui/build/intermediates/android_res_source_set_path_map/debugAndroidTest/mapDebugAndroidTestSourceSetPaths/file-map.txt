@@ -1,5 +1,0 @@
-com.voicenotes.app.core.ui.test.ui-updated_navigation_xml-0 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/ui/build/generated/updated_navigation_xml/debugAndroidTest
-com.voicenotes.app.core.ui.test.ui-packageDebugAndroidTestResources-1 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/ui/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/merged.dir
-com.voicenotes.app.core.ui.test.ui-packageDebugAndroidTestResources-2 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/ui/build/intermediates/incremental/debugAndroidTest/packageDebugAndroidTestResources/stripped.dir
-com.voicenotes.app.core.ui.test.ui-debugAndroidTest-3 /Users/gollu/AndroidStudioProjects/VoiceNotes/core/ui/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
-gradleHome-0 /Users/gollu/.gradle

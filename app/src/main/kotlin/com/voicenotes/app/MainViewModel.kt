@@ -14,6 +14,6 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     userPreferencesRepository: UserPreferencesRepository,
 ) : ViewModel() {
-    val themeMode: StateFlow<ThemeMode> = userPreferencesRepository.themeMode
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ThemeMode.SYSTEM)
+    val themeMode: StateFlow<ThemeMode?> = userPreferencesRepository.themeMode
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 }
