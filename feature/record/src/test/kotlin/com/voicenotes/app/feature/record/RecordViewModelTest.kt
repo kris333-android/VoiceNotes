@@ -3,6 +3,7 @@ package com.voicenotes.app.feature.record
 import androidx.lifecycle.SavedStateHandle
 import com.voicenotes.app.core.data.audio.AudioRecorderController
 import com.voicenotes.app.core.data.audio.NoteFileStorage
+import com.voicenotes.app.core.utils.DateFormattingUtils
 import com.voicenotes.app.feature.record.fake.FakeNoteRepository
 import java.io.File
 import kotlinx.coroutines.Dispatchers
@@ -57,11 +58,13 @@ class RecordViewModelTest {
         noteRepository: FakeNoteRepository = FakeNoteRepository(),
         fileStorage: NoteFileStorage = fileStorage(),
         folderId: Long = -1L,
+        dateFormattingUtils: DateFormattingUtils = DateFormattingUtils(),
     ) = RecordViewModel(
         savedStateHandle = SavedStateHandle(mapOf("folderId" to folderId)),
         recorderController = recorderController,
         noteRepository = noteRepository,
         fileStorage = fileStorage,
+        dateFormattingUtils = dateFormattingUtils,
     )
 
     @Test
