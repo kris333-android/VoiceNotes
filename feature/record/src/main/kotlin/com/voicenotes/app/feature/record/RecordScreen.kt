@@ -1,7 +1,16 @@
 package com.voicenotes.app.feature.record
 
 import android.Manifest
+import android.app.Activity
+import android.content.Context
+import android.content.ContextWrapper
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
+import android.provider.Settings
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.app.ActivityCompat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -18,6 +27,7 @@ import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Stop
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
@@ -28,6 +38,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -43,10 +54,11 @@ import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.voicenotes.app.core.common.formatDurationForAccessibility
 import com.voicenotes.app.core.common.formatDurationMillis
@@ -95,13 +107,42 @@ fun RecordScreen(
                 PackageManager.PERMISSION_GRANTED,
         )
     }
+    var deniedPermissionAttempts by rememberSaveable { mutableStateOf(0) }
+    var showAppSettings by rememberSaveable { mutableStateOf(false) }
     var showDiscardConfirm by rememberSaveable { mutableStateOf(false) }
 
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission(),
     ) { granted ->
         hasMicPermission = granted
-        if (granted) onStart()
+        if (granted) {
+            deniedPermissionAttempts = 0
+            showAppSettings = false
+            onStart()
+        } else {
+            deniedPermissionAttempts++
+            val shouldShowRationale = context.findActivity()?.let {
+                ActivityCompat.shouldShowRequestPermissionRationale(it, Manifest.permission.RECORD_AUDIO)
+            } ?: true
+            if (deniedPermissionAttempts >= 2 || !shouldShowRationale) showAppSettings = true
+        }
+    }
+    val lifecycleOwner = LocalLifecycleOwner.current
+
+    LaunchedEffect(Unit) {
+        if (!hasMicPermission) permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+    }
+
+    DisposableEffect(lifecycleOwner, context) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
+                hasMicPermission =
+                    ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
+                    PackageManager.PERMISSION_GRANTED
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
 
     Scaffold(
@@ -165,11 +206,29 @@ fun RecordScreen(
                     }
                     if (!hasMicPermission) {
                         Text(
-                            text = "Microphone access is needed to record voice notes.",
+                            text = if (showAppSettings) {
+                                "Microphone access is disabled. Enable it in app settings to record voice notes."
+                            } else {
+                                "Microphone access is needed to record voice notes. Tap the microphone to try again."
+                            },
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.padding(top = 16.dp),
                         )
+                        if (showAppSettings) {
+                            Button(
+                                onClick = {
+                                    context.startActivity(
+                                        Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                                            data = Uri.fromParts("package", context.packageName, null)
+                                        },
+                                    )
+                                },
+                                modifier = Modifier.padding(top = 8.dp),
+                            ) {
+                                Text("Open app settings")
+                            }
+                        }
                     }
                 }
                 RecordUiState.Phase.RECORDING, RecordUiState.Phase.PAUSED -> {
@@ -234,6 +293,15 @@ fun RecordScreen(
             },
         )
     }
+}
+
+private fun Context.findActivity(): Activity? {
+    var currentContext = this
+    while (currentContext is ContextWrapper) {
+        if (currentContext is Activity) return currentContext
+        currentContext = currentContext.baseContext
+    }
+    return null
 }
 
 @Preview(showBackground = true)
