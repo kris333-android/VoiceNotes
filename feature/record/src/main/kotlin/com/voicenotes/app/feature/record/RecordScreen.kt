@@ -1,16 +1,15 @@
 package com.voicenotes.app.feature.record
 
 import android.Manifest
-import android.app.Activity
+import android.app.NotificationManager
+import android.os.Build
 import android.content.Context
-import android.content.ContextWrapper
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.provider.Settings
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ActivityCompat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -57,6 +56,9 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
+import androidx.navigationevent.NavigationEventInfo
+import androidx.navigationevent.compose.NavigationBackHandler
+import androidx.navigationevent.compose.rememberNavigationEventState
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -101,49 +103,54 @@ fun RecordScreen(
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
-    var hasMicPermission by remember {
-        mutableStateOf(
-            ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
-                PackageManager.PERMISSION_GRANTED,
-        )
-    }
-    var deniedPermissionAttempts by rememberSaveable { mutableStateOf(0) }
+    var hasRequiredPermissions by remember { mutableStateOf(context.canStartRecording()) }
     var showAppSettings by rememberSaveable { mutableStateOf(false) }
     var showDiscardConfirm by rememberSaveable { mutableStateOf(false) }
 
     val permissionLauncher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.RequestPermission(),
-    ) { granted ->
-        hasMicPermission = granted
-        if (granted) {
-            deniedPermissionAttempts = 0
-            showAppSettings = false
-            onStart()
-        } else {
-            deniedPermissionAttempts++
-            val shouldShowRationale = context.findActivity()?.let {
-                ActivityCompat.shouldShowRequestPermissionRationale(it, Manifest.permission.RECORD_AUDIO)
-            } ?: true
-            if (deniedPermissionAttempts >= 2 || !shouldShowRationale) showAppSettings = true
+        contract = ActivityResultContracts.RequestMultiplePermissions(),
+    ) {
+        hasRequiredPermissions = context.canStartRecording()
+        showAppSettings = !hasRequiredPermissions
+        if (hasRequiredPermissions && uiState.phase == RecordUiState.Phase.IDLE) onStart()
+    }
+
+    val requestRecording: () -> Unit = {
+        // Recheck at the point of use, including after returning from system settings.
+        hasRequiredPermissions = context.canStartRecording()
+        val missingPermissions = context.missingRecordingPermissions()
+        when {
+            hasRequiredPermissions -> onStart()
+            missingPermissions.isNotEmpty() -> permissionLauncher.launch(missingPermissions)
+            else -> showAppSettings = true
         }
     }
     val lifecycleOwner = LocalLifecycleOwner.current
 
     LaunchedEffect(Unit) {
-        if (!hasMicPermission) permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+        if (!context.canStartRecording() && uiState.phase == RecordUiState.Phase.IDLE) {
+            requestRecording()
+        }
     }
 
     DisposableEffect(lifecycleOwner, context) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_RESUME) {
-                hasMicPermission =
-                    ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
-                    PackageManager.PERMISSION_GRANTED
+                hasRequiredPermissions = context.canStartRecording()
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
         onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
+
+    val backState = rememberNavigationEventState(currentInfo = NavigationEventInfo.None)
+    NavigationBackHandler(
+        state = backState,
+        isBackEnabled = uiState.phase != RecordUiState.Phase.IDLE || uiState.isSaving,
+        onBackCompleted = {
+            if (!uiState.isSaving) showDiscardConfirm = true
+        },
+    )
 
     Scaffold(
         modifier = modifier,
@@ -184,6 +191,14 @@ fun RecordScreen(
                     },
             )
 
+            if (uiState.recordingFailed) {
+                Text(
+                    text = "Recording stopped unexpectedly. Please start a new recording.",
+                    color = MaterialTheme.colorScheme.error,
+                    modifier = Modifier.padding(bottom = 16.dp),
+                )
+            }
+
             WaveformVisualizer(amplitudes = uiState.amplitudeHistory)
 
             Spacer(modifier = Modifier.height(48.dp))
@@ -191,25 +206,19 @@ fun RecordScreen(
             when (uiState.phase) {
                 RecordUiState.Phase.IDLE -> {
                     FloatingActionButton(
-                        onClick = {
-                            if (hasMicPermission) {
-                                onStart()
-                            } else {
-                                permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
-                            }
-                        },
+                        onClick = requestRecording,
                         modifier = Modifier
                             .size(80.dp)
                             .semantics { contentDescription = "Start recording" },
                     ) {
                         Icon(Icons.Filled.Mic, contentDescription = null, modifier = Modifier.size(36.dp))
                     }
-                    if (!hasMicPermission) {
+                    if (!hasRequiredPermissions) {
                         Text(
                             text = if (showAppSettings) {
-                                "Microphone access is disabled. Enable it in app settings to record voice notes."
+                                "Microphone and notification access are required. Enable missing permissions in app settings before recording."
                             } else {
-                                "Microphone access is needed to record voice notes. Tap the microphone to try again."
+                                "Allow microphone and notification access before recording. Notifications let you return to an ongoing recording from Home. Tap the microphone to allow missing permissions."
                             },
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -283,7 +292,7 @@ fun RecordScreen(
     if (showDiscardConfirm) {
         ConfirmActionDialog(
             title = "Discard recording?",
-            message = "This voice note has not been saved. Are you sure you want to discard it?",
+            message = "A recording is in progress. Leaving this screen will discard it. Do you want to exit?",
             confirmLabel = "Discard",
             onDismiss = { showDiscardConfirm = false },
             onConfirm = {
@@ -295,14 +304,18 @@ fun RecordScreen(
     }
 }
 
-private fun Context.findActivity(): Activity? {
-    var currentContext = this
-    while (currentContext is ContextWrapper) {
-        if (currentContext is Activity) return currentContext
-        currentContext = currentContext.baseContext
+private fun Context.missingRecordingPermissions(): Array<String> = buildList {
+    add(Manifest.permission.RECORD_AUDIO)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        add(Manifest.permission.POST_NOTIFICATIONS)
     }
-    return null
-}
+}.filter {
+    ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
+}.toTypedArray()
+
+private fun Context.canStartRecording(): Boolean =
+    missingRecordingPermissions().isEmpty() &&
+        getSystemService(NotificationManager::class.java).areNotificationsEnabled()
 
 @Preview(showBackground = true)
 @Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)

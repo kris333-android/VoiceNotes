@@ -21,6 +21,7 @@ data class RecordUiState(
     val elapsedMillis: Long = 0L,
     val amplitudeHistory: List<Float> = emptyList(),
     val isSaving: Boolean = false,
+    val recordingFailed: Boolean = false,
     val savedNoteId: Long? = null,
 ) {
     enum class Phase { IDLE, RECORDING, PAUSED }
@@ -52,6 +53,13 @@ class RecordViewModel @Inject constructor(
             recorderController.state.collect { state ->
                 when (state) {
                     is AudioRecorderController.State.Idle -> Unit
+                    is AudioRecorderController.State.Failed -> _uiState.update {
+                        it.copy(
+                            phase = RecordUiState.Phase.IDLE,
+                            elapsedMillis = state.elapsedMillis,
+                            recordingFailed = true,
+                        )
+                    }
                     is AudioRecorderController.State.Recording -> _uiState.update {
                         it.copy(
                             phase = RecordUiState.Phase.RECORDING,
@@ -78,8 +86,8 @@ class RecordViewModel @Inject constructor(
     fun startRecording() {
         val file = fileStorage.createRecordingFile()
         pendingFile = file
-        recorderController.start(file)
         _uiState.value = RecordUiState(phase = RecordUiState.Phase.RECORDING)
+        recorderController.start(file)
     }
 
     fun pauseRecording() = recorderController.pause()

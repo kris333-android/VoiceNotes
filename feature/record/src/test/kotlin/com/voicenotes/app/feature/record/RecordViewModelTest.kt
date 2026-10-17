@@ -112,6 +112,22 @@ class RecordViewModelTest {
     }
 
     @Test
+    fun `recorder failure stops the recording UI and preserves the last elapsed time`() = runTest(dispatcher) {
+        val states = MutableStateFlow<AudioRecorderController.State>(AudioRecorderController.State.Idle)
+        val sut = viewModel(recorderController(states))
+        advanceUntilIdle()
+        states.value = AudioRecorderController.State.Recording(5_000L, 100)
+        advanceUntilIdle()
+
+        states.value = AudioRecorderController.State.Failed(5_100L)
+        advanceUntilIdle()
+
+        assertEquals(RecordUiState.Phase.IDLE, sut.uiState.value.phase)
+        assertEquals(5_100L, sut.uiState.value.elapsedMillis)
+        assertTrue(sut.uiState.value.recordingFailed)
+    }
+
+    @Test
     fun `pauseRecording delegates to the controller`() = runTest(dispatcher) {
         val controller = recorderController()
         val sut = viewModel(controller)
