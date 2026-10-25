@@ -15,7 +15,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -47,6 +46,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.liveRegion
@@ -56,9 +56,6 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
-import androidx.navigationevent.NavigationEventInfo
-import androidx.navigationevent.compose.NavigationBackHandler
-import androidx.navigationevent.compose.rememberNavigationEventState
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -103,7 +100,10 @@ fun RecordScreen(
     modifier: Modifier = Modifier,
 ) {
     val context = LocalContext.current
-    var hasRequiredPermissions by remember { mutableStateOf(context.canStartRecording()) }
+    val isPreview = LocalInspectionMode.current
+    var hasRequiredPermissions by remember(context, isPreview) {
+        mutableStateOf(isPreview || context.canStartRecording())
+    }
     var showAppSettings by rememberSaveable { mutableStateOf(false) }
     var showDiscardConfirm by rememberSaveable { mutableStateOf(false) }
 
@@ -116,7 +116,6 @@ fun RecordScreen(
     }
 
     val requestRecording: () -> Unit = {
-        // Recheck at the point of use, including after returning from system settings.
         hasRequiredPermissions = context.canStartRecording()
         val missingPermissions = context.missingRecordingPermissions()
         when {
@@ -128,29 +127,20 @@ fun RecordScreen(
     val lifecycleOwner = LocalLifecycleOwner.current
 
     LaunchedEffect(Unit) {
-        if (!context.canStartRecording() && uiState.phase == RecordUiState.Phase.IDLE) {
+        if (!isPreview && !context.canStartRecording() && uiState.phase == RecordUiState.Phase.IDLE) {
             requestRecording()
         }
     }
 
-    DisposableEffect(lifecycleOwner, context) {
+    DisposableEffect(lifecycleOwner, context, isPreview) {
         val observer = LifecycleEventObserver { _, event ->
-            if (event == Lifecycle.Event.ON_RESUME) {
+            if (!isPreview && event == Lifecycle.Event.ON_RESUME) {
                 hasRequiredPermissions = context.canStartRecording()
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
         onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
-
-    val backState = rememberNavigationEventState(currentInfo = NavigationEventInfo.None)
-    NavigationBackHandler(
-        state = backState,
-        isBackEnabled = uiState.phase != RecordUiState.Phase.IDLE || uiState.isSaving,
-        onBackCompleted = {
-            if (!uiState.isSaving) showDiscardConfirm = true
-        },
-    )
 
     Scaffold(
         modifier = modifier,
@@ -292,7 +282,7 @@ fun RecordScreen(
     if (showDiscardConfirm) {
         ConfirmActionDialog(
             title = "Discard recording?",
-            message = "A recording is in progress. Leaving this screen will discard it. Do you want to exit?",
+            message = "This voice note has not been saved. Are you sure you want to discard it?",
             confirmLabel = "Discard",
             onDismiss = { showDiscardConfirm = false },
             onConfirm = {

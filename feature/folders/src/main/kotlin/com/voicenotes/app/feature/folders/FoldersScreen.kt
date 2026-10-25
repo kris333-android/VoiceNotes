@@ -26,6 +26,8 @@ import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
+import androidx.compose.material3.ListItemDefaults
+import androidx.compose.ui.semantics.selected
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Scaffold
@@ -55,12 +57,16 @@ import com.voicenotes.app.core.ui.TextInputDialog
 fun FoldersRoute(
     onOpenFolder: (folderId: Long) -> Unit,
     onRecord: () -> Unit,
+    selectedFolderId: Long? = null,
+    showRecordAction: Boolean = true,
     viewModel: FoldersViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     FoldersScreen(
         uiState = uiState,
+        selectedFolderId = selectedFolderId,
+        showRecordAction = showRecordAction,
         onOpenFolder = onOpenFolder,
         onRecord = onRecord,
         onCreateFolder = viewModel::createFolder,
@@ -81,6 +87,8 @@ fun FoldersScreen(
     onDeleteFolder: (Long) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
     modifier: Modifier = Modifier,
+    selectedFolderId: Long? = null,
+    showRecordAction: Boolean = true,
 ) {
     var showThemeMenu by remember { mutableStateOf(false) }
     var showCreateFolder by rememberSaveable { mutableStateOf(false) }
@@ -127,7 +135,7 @@ fun FoldersScreen(
             )
         },
         floatingActionButton = {
-            ExtendedFloatingActionButton(
+            if (showRecordAction) ExtendedFloatingActionButton(
                 onClick = onRecord,
                 icon = { Icon(Icons.Filled.Mic, contentDescription = null) },
                 text = { Text("Record") },
@@ -137,6 +145,7 @@ fun FoldersScreen(
         LazyColumn(modifier = Modifier.padding(padding)) {
             item {
                 FolderListItem(
+                    selected = selectedFolderId == ALL_NOTES_FOLDER_ID,
                     name = "All notes",
                     noteCount = uiState.allNotesCount,
                     icon = Icons.Filled.AllInbox,
@@ -146,6 +155,7 @@ fun FoldersScreen(
             if (uiState.unfiledCount > 0) {
                 item {
                     FolderListItem(
+                        selected = selectedFolderId == UNFILED_FOLDER_ID,
                         name = "Unfiled",
                         noteCount = uiState.unfiledCount,
                         icon = Icons.Filled.Inbox,
@@ -156,6 +166,7 @@ fun FoldersScreen(
             items(uiState.folders, key = { it.folder.id }) { item ->
                 FolderRow(
                     item = item,
+                    isSelected = selectedFolderId == item.folder.id,
                     onClick = { onOpenFolder(item.folder.id) },
                     onLongClick = { actionsFolder = item.folder },
                 )
@@ -207,6 +218,7 @@ fun FoldersScreen(
 @Composable
 private fun FolderRow(
     item: FolderWithNoteCount,
+    isSelected: Boolean,
     onClick: () -> Unit,
     onLongClick: () -> Unit,
 ) {
@@ -214,6 +226,10 @@ private fun FolderRow(
     val a11yLabel = "Open ${item.folder.name}, $countLabel. Long-press for more options."
 
     ListItem(
+        colors = ListItemDefaults.colors(
+            containerColor = if (isSelected) MaterialTheme.colorScheme.secondaryContainer
+                else MaterialTheme.colorScheme.surface,
+        ),
         headlineContent = { Text(item.folder.name) },
         supportingContent = { Text(countLabel) },
         leadingContent = {
@@ -232,7 +248,7 @@ private fun FolderRow(
                 onLongClick = onLongClick,
                 onClickLabel = a11yLabel
             )
-            .semantics { contentDescription = a11yLabel },
+            .semantics { contentDescription = a11yLabel; selected = isSelected },
     )
 }
 

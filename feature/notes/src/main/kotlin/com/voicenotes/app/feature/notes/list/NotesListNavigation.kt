@@ -14,11 +14,12 @@ fun NavGraphBuilder.notesListScreen(
     onBack: () -> Unit,
     onRecord: (folderId: Long?) -> Unit,
     onOpenNote: (noteId: Long) -> Unit,
+    showBack: Boolean = true,
 ) {
     composable(
         route = NOTES_LIST_ROUTE_PATTERN,
         arguments = listOf(navArgument("folderId") { type = NavType.LongType }),
     ) {
-        NotesListRoute(onBack = onBack, onRecord = onRecord, onOpenNote = onOpenNote)
+        NotesListRoute(onBack = onBack, onRecord = onRecord, onOpenNote = onOpenNote, showBack = showBack)
     }
 }

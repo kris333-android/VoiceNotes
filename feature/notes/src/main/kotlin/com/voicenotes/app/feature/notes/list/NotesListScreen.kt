@@ -45,6 +45,7 @@ fun NotesListRoute(
     onBack: () -> Unit,
     onRecord: (folderId: Long?) -> Unit,
     onOpenNote: (noteId: Long) -> Unit,
+    showBack: Boolean = true,
     viewModel: NotesListViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -52,6 +53,7 @@ fun NotesListRoute(
     NotesListScreen(
         uiState = uiState,
         onBack = onBack,
+        showBack = showBack,
         onRecord = { onRecord(uiState.noteRecordFolderId) },
         onOpenNote = onOpenNote,
         onRename = viewModel::renameNote,
@@ -75,6 +77,7 @@ fun NotesListScreen(
     onShare: (VoiceNote) -> Unit,
     onCreateFolderAndMove: (noteId: Long, folderName: String) -> Unit,
     modifier: Modifier = Modifier,
+    showBack: Boolean = true,
 ) {
     var menuNote by remember { mutableStateOf<VoiceNote?>(null) }
     var renameTarget by remember { mutableStateOf<VoiceNote?>(null) }
@@ -88,7 +91,7 @@ fun NotesListScreen(
             TopAppBar(
                 title = { Text(uiState.title) },
                 navigationIcon = {
-                    IconButton(onClick = onBack) {
+                    if (showBack) IconButton(onClick = onBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },

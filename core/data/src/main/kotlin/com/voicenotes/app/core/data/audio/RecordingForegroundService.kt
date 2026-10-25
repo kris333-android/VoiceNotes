@@ -10,10 +10,7 @@ import android.content.pm.ServiceInfo
 import android.os.Build
 import android.os.IBinder
 
-/**
- * Keeps microphone access available when a recording screen is no longer visible.
- * The controller starts this while the activity is visible and stops it on cleanup.
- */
+/** Maintains foreground microphone access for the controller's recording session. */
 class RecordingService : Service() {
     override fun onCreate() {
         super.onCreate()
@@ -34,8 +31,6 @@ class RecordingService : Service() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                     setForegroundServiceBehavior(Notification.FOREGROUND_SERVICE_IMMEDIATE)
                 }
-            }
-            .apply {
                 if (launchIntent != null) {
                     setContentIntent(PendingIntent.getActivity(
                         this@RecordingService, 0, launchIntent,
