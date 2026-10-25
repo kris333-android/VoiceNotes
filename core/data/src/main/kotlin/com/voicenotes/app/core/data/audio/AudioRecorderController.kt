@@ -1,6 +1,7 @@
 package com.voicenotes.app.core.data.audio
 
 import android.content.Context
+import android.content.Intent
 import android.media.MediaRecorder
 import android.os.Build
 import android.os.SystemClock
@@ -31,6 +32,7 @@ class AudioRecorderController @Inject constructor(
 
     sealed interface State {
         data object Idle : State
+        data class Failed(val elapsedMillis: Long) : State
         data class Recording(val elapsedMillis: Long, val amplitude: Int) : State
         data class Paused(val elapsedMillis: Long) : State
     }
@@ -40,7 +42,7 @@ class AudioRecorderController @Inject constructor(
     private val _state = MutableStateFlow<State>(State.Idle)
     val state: StateFlow<State> = _state.asStateFlow()
 
-    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private var pollingJob: Job? = null
     private var mediaRecorder: MediaRecorder? = null
     private var outputFile: File? = null
@@ -48,9 +50,19 @@ class AudioRecorderController @Inject constructor(
     private var segmentStartUptime: Long? = null
 
     fun start(outputFile: File) {
-        println("AudioRecorderController.start() outputFile=${outputFile.absolutePath}")
+        pollingJob?.cancel()
         releaseRecorder()
-        val recorder = createRecorderAndConfigure(outputFile)
+        cleanup()
+        _state.value = State.Idle
+        val recorder = try {
+            context.startForegroundService(Intent(context, RecordingService::class.java))
+            createRecorderAndConfigure(outputFile)
+        } catch (_: Exception) {
+            context.stopService(Intent(context, RecordingService::class.java))
+            outputFile.delete()
+            _state.value = State.Failed(0L)
+            return
+        }
         mediaRecorder = recorder
         this.outputFile = outputFile
         accumulatedMillis = 0L
@@ -82,9 +94,13 @@ class AudioRecorderController @Inject constructor(
         val duration = currentElapsedMillis()
         pollingJob?.cancel()
         recorder?.let {
-            runCatching { recorder.stop() }
+            if (runCatching { recorder.stop() }.isFailure) {
+                failRecording()
+                return null
+            }
             recorder.release()
         }
+        context.stopService(Intent(context, RecordingService::class.java))
         cleanup()
         _state.value = State.Idle
         return file?.let { RecordingResult(it, duration) }
@@ -93,6 +109,8 @@ class AudioRecorderController @Inject constructor(
     private fun cleanup() {
         mediaRecorder = null
         outputFile = null
+        segmentStartUptime = null
+        accumulatedMillis = 0L
     }
 
     fun cancel() {
@@ -104,6 +122,7 @@ class AudioRecorderController @Inject constructor(
     fun release() {
         pollingJob?.cancel()
         releaseRecorder()
+        cleanup()
         scope.cancel()
     }
 
@@ -114,7 +133,12 @@ class AudioRecorderController @Inject constructor(
         pollingJob?.cancel()
         pollingJob = scope.launch {
             while (isActive) {
-                val amplitude = runCatching { mediaRecorder?.maxAmplitude ?: 0 }.getOrDefault(0)
+                val amplitude = try {
+                    mediaRecorder?.maxAmplitude ?: break
+                } catch (_: IllegalStateException) {
+                    failRecording()
+                    break
+                }
                 _state.value = State.Recording(currentElapsedMillis(), amplitude)
                 delay(POLL_INTERVAL_MS)
             }
@@ -122,8 +146,18 @@ class AudioRecorderController @Inject constructor(
     }
 
     private fun releaseRecorder() {
+        context.stopService(Intent(context, RecordingService::class.java))
         mediaRecorder?.let { runCatching { it.release() } }
         mediaRecorder = null
+    }
+
+    private fun failRecording() {
+        val elapsed = currentElapsedMillis()
+        pollingJob?.cancel()
+        releaseRecorder()
+        outputFile?.delete()
+        cleanup()
+        _state.value = State.Failed(elapsed)
     }
 
     private fun createRecorderAndConfigure(output: File): MediaRecorder =
@@ -133,14 +167,20 @@ class AudioRecorderController @Inject constructor(
             @Suppress("DEPRECATION")
             MediaRecorder()
         }.apply {
-            setAudioSource(MediaRecorder.AudioSource.MIC)
-            setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
-            setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
-            setAudioEncodingBitRate(128_000)
-            setAudioSamplingRate(44_100)
-            setOutputFile(output.absolutePath)
-            prepare()
-            start()
+            try {
+                setOnErrorListener { _, _, _ -> failRecording() }
+                setAudioSource(MediaRecorder.AudioSource.MIC)
+                setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
+                setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
+                setAudioEncodingBitRate(128_000)
+                setAudioSamplingRate(44_100)
+                setOutputFile(output.absolutePath)
+                prepare()
+                start()
+            } catch (error: Exception) {
+                release()
+                throw error
+            }
         }
 
     private companion object {

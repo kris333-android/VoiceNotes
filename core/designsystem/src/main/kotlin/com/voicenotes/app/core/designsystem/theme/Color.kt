@@ -29,7 +29,7 @@ val md_onSurfaceVariant_light = Color(0xFF46464F)
 val md_outline_light = Color(0xFF767680)
 val md_outlineVariant_light = Color(0xFFC7C5D0)
 
-val md_primary_dark = Color(0xFFA3561D)
+val md_primary_dark = Color(0x9CFF5722)
 val md_onPrimary_dark = Color(0xFF2A1600)
 val md_primaryContainer_dark = Color(0xFF5C2E00)
 val md_onPrimaryContainer_dark = Color(0xFFFFE0C2)
